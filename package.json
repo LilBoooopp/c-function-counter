@@ -1,0 +1,39 @@
+{
+  "name": "c-function-counter",
+  "displayName": "c-function-counter",
+  "description": "Counts the number of c functions defined in any given .c file.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.98.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+	"onLanguage:c"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [{
+      "command": "c-function-counter.countFunctions",
+      "title": "Count C Functions"
+    }]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.98.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "eslint": "^9.23.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  },
+  "repository": {
+	"type": "git",
+	"url": 
+  }
+}
