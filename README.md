@@ -38,6 +38,11 @@ This extension has no configurable settings at this time.
 
 ---
 
+## Installing The Extension
+```bash
+code --install-extension c-function-counter-0.0.1.vsix
+```
+
 ## Development
 
 ### Building the Extension
